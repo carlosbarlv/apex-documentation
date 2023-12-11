@@ -2,6 +2,9 @@
 
 Antes de empezar:
 
+> .[!IMPORTANT].
+> Por favor, lee lo siguiente antes de continuar.
+
 * El nombre el equipo NO debe tener más de 16 caracteres. [Cómo hacerlo](#revisar-el-nombre-del-equipo)
 * Recomendable desactivar el antivirus para que no se bloquee la instalación de la base de datos.
 * Tener a la mano los siguientes archivos (click en los enlaces para descargarlos):
