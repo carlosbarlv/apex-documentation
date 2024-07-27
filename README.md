@@ -393,3 +393,11 @@ Los siguientes son datos del administrador del workspace
 Una vez completado todo sale la siguiente ventana:
 
 ![CreateWorkspaceDone](./images/create_workspace_done.png)
+
+## Desinstalar base de datos 21c
+
+Después de eliminar el archivo ejecutable de un servicio, es posible que el servicio permanezca en el Registro. En ese caso, use el comando sc delete para quitar la entrada del servicio del Registro.
+
+En PowerShell, ejecutar:  
+
+```C:\> sc.exe delete “YourServiceName”```
