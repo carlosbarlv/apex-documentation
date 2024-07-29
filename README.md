@@ -180,20 +180,15 @@ SYS> alter user APEX_PUBLIC_USER IDENTIFIED BY "Oracle.1" account unlock;
 
 NOTA: este usuario se encuentra en un profile que caduca cada 180 días.
 
-En caso que quisieramos que NO caduque, debemos crear un nuevo profile y asignar el usuario a ese nuevo profile.
+En caso que quisieramos que NO caduque, debemos alterar el profile con los siguientes comandos:
 
-### Crear un profile
-
-Ejecutamos lo siguiente:
+Nos conectamos con sys, desde el CMD o el POWERSHELL ejecutamos:
 
 ```
-SQL> create profile APEX_USER_PROFILE limit PASSWORD_LIFE_TIME UNLIMITED;
+C:\> sqlplus sys/Oracle.1@xe as sysdba
 ```
-
-Luego para asignarle al usuario ese profile ejecutamos:
-
 ```
-SQL> alter user APEX_PUBLIC_USER profile APEX_USER_PROFILE;
+SQL> alter profile default limit password_life_time unlimited;
 ```
 
 Deshabilitar el Oracle XMLDB protocol server:
@@ -377,6 +372,12 @@ Nos logueamos con el usuario admin que creamos y en el workspace ponemos INTERNA
 ![InternalInitPage](./images/internal_init_page.png)
 
 Damos click a crear workspace y llenamos los campos:
+
+IMPORTANTE: Poner los datos exactamente como se describen más abajo, esto porque para poder importar aplicaciones a ese workspace, deben tener la misma numeración en el ID.
+
+### Workspace Name: DESARROLLO
+
+### Workspace ID: 2200440891654775
 
 ![CreateWorkspace](./images/create_workspace_1.png)
 
