@@ -124,7 +124,7 @@ El erros que daba en este caso es que existían dos usuarios transacciona, uno e
 
 Ejecutar en ORDSSETUP en un CMD:
 ```
-ords --config C:\app\product\ords\config config secret db.password
+PS C:\Users\Carlo> C:\app\product\ordssetup\bin\ords.exe --config C:\app\product\ords\config config secret db.password
 ```
 
 Para más información:
