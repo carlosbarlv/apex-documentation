@@ -122,4 +122,12 @@ El erros que daba en este caso es que existían dos usuarios transacciona, uno e
 
 ### Error 503 invalid username/password
 
+Ejecutar en ORDSSETUP en un CMD:
+```
+ords --config C:\app\product\ords\config config secret db.password
+```
+
+Para más información:
+
 https://www.thatjeffsmith.com/archive/2017/06/how-to-update-the-ords_public_user-password/
+
