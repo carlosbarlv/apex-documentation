@@ -119,3 +119,7 @@ Nos da un resultado como el siguiente:
 En este caso es que transaccional del contenedor xepdb1 hay que ejecutar el gran restricted sesión to transaccional. Obviamente eso debe ejecutarse en el contenedor.
 
 El erros que daba en este caso es que existían dos usuarios transacciona, uno en el contenedor y otro local la solución fue eliminar el usuario local (el que NO estaba en el contenedor) y luego ejecutar los alters y listo.
+
+### Error 503 invalid username/password
+
+https://www.thatjeffsmith.com/archive/2017/06/how-to-update-the-ords_public_user-password/
