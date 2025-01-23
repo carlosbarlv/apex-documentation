@@ -2,7 +2,8 @@
 
 Antes de empezar:
 
-> .[!IMPORTANT].
+> [!IMPORTANT]
+> 
 > Por favor, lee lo siguiente antes de continuar.
 
 * El nombre el equipo NO debe tener más de 16 caracteres. [Cómo hacerlo](#revisar-el-nombre-del-equipo)
